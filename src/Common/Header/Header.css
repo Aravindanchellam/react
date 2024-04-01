@@ -1,0 +1,24 @@
+.header-container {
+  background-color: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.logo-link,
+.header-container a:link,
+.header-container a:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.header-container a:hover{
+    color: red;
+}
+
+.nav-link {
+  display: flex;
+  gap: 10px;
+}
