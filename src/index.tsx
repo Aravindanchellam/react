@@ -4,15 +4,28 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { NativeBaseProvider, extendTheme } from "native-base";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
+const newColorTheme = {
+  brand: {
+    900: "#8287af",
+    800: "#7c83db",
+    700: "#b3bef6",
+  },
+};
+const theme = extendTheme({ colors: newColorTheme });
+
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <NativeBaseProvider theme={theme}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </NativeBaseProvider>
   </React.StrictMode>
 );
 

@@ -1,11 +1,11 @@
-import './App.css';
-import MainRouter from './Router';
-import Header from './Common/Header';
+import React from "react";
+import "./App.css";
+import MainRouter from "./Router";
 
 function App() {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <MainRouter />
     </div>
   );
